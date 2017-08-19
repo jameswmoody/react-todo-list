@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import uuid from 'uuid';
 import List from './components/List';
 import NewItemForm from './components/NewItemForm';
 import './App.css';
@@ -14,13 +15,16 @@ class App extends Component {
   componentWillMount() {
     this.setState({list: [
       {
-        description: 'Wash Clothes'
+        // id:uuid.v4(),
+        description: 'Wash Clothes',
       },
       {
-        description: 'Buy Groceries'
+        // id:uuid.v4(),
+        description: 'Buy Groceries',
       },
       {
-        description: 'Cook Dinner'
+        // id:uuid.v4(),
+        description: 'Cook Dinner',
       }
     ]});
   }
@@ -28,7 +32,13 @@ class App extends Component {
   handleAddItem(item) {
     let list = this.state.list;
     list.push(item);
-    this.setState({list:list})
+    this.setState({list:list});
+  }
+
+  updateList() {
+    let list = this.state.list;
+    this.setState({list:list});
+    console.log('updated');
   }
 
   render() {
@@ -37,7 +47,7 @@ class App extends Component {
         <div className="list-container">
           <h1 className="heading">To Do List</h1>
           <NewItemForm addItem={this.handleAddItem.bind(this)} />
-          <List list={this.state.list}/>
+          <List list={this.state.list} onClick={this.updateList.bind(this)}/>
         </div>
       </div>
     );
