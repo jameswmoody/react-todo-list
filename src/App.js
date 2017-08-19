@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import List from './components/List';
+import NewItemForm from './components/NewItemForm';
 import './App.css';
 
 class App extends Component {
@@ -24,12 +25,18 @@ class App extends Component {
     ]});
   }
 
+  handleAddItem(item) {
+    let list = this.state.list;
+    list.push(item);
+    this.setState({list:list})
+  }
+
   render() {
-    console.log(this.state.list);
     return (
       <div className="App">
         <div className="list-container">
           <h1 className="heading">To Do List</h1>
+          <NewItemForm addItem={this.handleAddItem.bind(this)} />
           <List list={this.state.list}/>
         </div>
       </div>

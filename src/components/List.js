@@ -5,7 +5,6 @@ class List extends Component {
 
   render() {
     let listItems;
-    console.log(this.props.list);
     if (this.props.list) {
       listItems = this.props.list.map((item, i) => {
         return (
