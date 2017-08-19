@@ -9,16 +9,21 @@ body, html {
 }
 
 .heading {
+  padding-top: 30px;
   text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  color: #6E6F73;
 }
 
 .form-field {
-  width: 85%;
+  width: 83%;
   height: 40px;
   border: 1px #EDEDED solid;
   font-size: 1em;
+  font-family: 'Work Sans', sans-serif;
   outline: none;
   padding: 0;
+  padding-left: 10px;
 }
 
 .form-submit {
@@ -26,6 +31,9 @@ body, html {
   height: 42px;
   float: right;
   border: none;
+  outline: none;
+  background-color: #00C706;
+  color: #fff;
 }
 
 .list-container {
@@ -38,10 +46,12 @@ body, html {
 .list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .list-item {
   text-align: center;
+  font-family: 'Work Sans', sans-serif;
   border: 1px #EDEDED solid;
   border-bottom: none;
   padding: 20px;
