@@ -50,9 +50,19 @@ body, html {
 }
 
 .list-item {
+  height: 30px;
   text-align: center;
   font-family: 'Work Sans', sans-serif;
   border: 1px #EDEDED solid;
   border-bottom: none;
   padding: 20px;
+}
+
+.item-checkbox {
+  height: 30px;
+  width: 30px;
+  border: 1px #EDEDED solid;
+  border-radius: 50%;
+  display: inline;
+  float: left;
 }
