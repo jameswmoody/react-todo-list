@@ -3,3 +3,28 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+body, html {
+  background-color: #F5F5F5;
+}
+
+.heading {
+  text-align: center;
+}
+
+.list-container {
+  margin: 0 auto;
+  width: 500px;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px #D3D3D3;
+}
+
+.list {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.list-item {
+  margin: 10px;
+  text-align: center;
+}
