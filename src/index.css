@@ -12,6 +12,22 @@ body, html {
   text-align: center;
 }
 
+.form-field {
+  width: 85%;
+  height: 40px;
+  border: 1px #EDEDED solid;
+  font-size: 1em;
+  outline: none;
+  padding: 0;
+}
+
+.form-submit {
+  width: 14.6%;
+  height: 42px;
+  float: right;
+  border: none;
+}
+
 .list-container {
   margin: 0 auto;
   width: 500px;
@@ -21,10 +37,12 @@ body, html {
 
 .list {
   list-style-type: none;
-  padding: 20px;
+  padding: 0;
 }
 
 .list-item {
-  margin: 10px;
   text-align: center;
+  border: 1px #EDEDED solid;
+  border-bottom: none;
+  padding: 20px;
 }
