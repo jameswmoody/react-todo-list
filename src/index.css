@@ -12,6 +12,7 @@ body, html {
   padding-top: 30px;
   text-align: center;
   font-family: 'Work Sans', sans-serif;
+  font-size: 2.5em;
   color: #6E6F73;
 }
 
@@ -53,16 +54,21 @@ body, html {
   height: 30px;
   text-align: center;
   font-family: 'Work Sans', sans-serif;
+  font-size: 1.4em;
   border: 1px #EDEDED solid;
   border-bottom: none;
   padding: 20px;
 }
 
-.item-checkbox {
+.item-checkbox, .complete-item-checkbox {
   height: 30px;
   width: 30px;
   border: 1px #EDEDED solid;
   border-radius: 50%;
   display: inline;
   float: left;
+}
+
+.complete-item-checkbox {
+  background-color: #00C706;
 }
