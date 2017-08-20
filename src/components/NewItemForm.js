@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import uuid from 'uuid';
 
 class NewItemForm extends Component {
   constructor() {
@@ -13,6 +14,7 @@ class NewItemForm extends Component {
       alert('Please enter a description')
     } else {
       this.setState({newItem: {
+        id: uuid.v4(),
         description: this.refs.description.value
       }}, function () {
         this.props.addItem(this.state.newItem);
