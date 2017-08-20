@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import uuid from 'uuid';
 import $ from 'jquery';
-import Draggable from 'react-draggable';
 import List from './components/List';
 import NewItemForm from './components/NewItemForm';
 import './App.css';
