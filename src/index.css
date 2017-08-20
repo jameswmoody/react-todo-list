@@ -30,6 +30,8 @@ body, html {
 .form-submit {
   width: 14.6%;
   height: 42px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1em;
   float: right;
   border: none;
   outline: none;
@@ -71,4 +73,9 @@ body, html {
 
 .complete-item-checkbox {
   background-color: #00C706;
+}
+
+.crossout {
+  color: #CBCBCB;
+  text-decoration: line-through;
 }
