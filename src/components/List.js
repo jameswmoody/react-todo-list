@@ -5,9 +5,9 @@ class List extends Component {
   render() {
     let listItems;
     if (this.props.list) {
-      listItems = this.props.list.map((item, i) => {
+      listItems = this.props.list.map(item => {
         return (
-          <ListItem key={i} item={item} />
+          <ListItem key={item.id} item={item} />
         )
       });
     }
